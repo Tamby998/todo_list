@@ -20,7 +20,7 @@
           :key="todo.id"
           :class="{ 'is-done': todo.done }"
         >
-          <span>{{ todo.title }}</span> <!-- Affiche le titre de la tâche -->
+          <span>{{ todo.title }}</span> 
           <button
             class="btn"
             :class="btnClass(todo)"
@@ -29,8 +29,8 @@
           >
             {{ todo.done ? "✓" : "✗" }}
           </button>
-          <button class="btn" @click="editTodo(todo)" :disabled="todo.done">✏️</button> <!-- Bouton d'édition -->
-          <button class="btn" @click="deleteTodo(index)">❌</button> <!-- Bouton de suppression -->
+          <button class="btn" @click="editTodo(todo)" :disabled="todo.done">✏️</button> 
+          <button class="btn" @click="deleteTodo(index)">❌</button> 
         </b-list-group-item>
       </b-list-group>
     </div>
